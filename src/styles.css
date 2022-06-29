@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.logo img{
+    position: fixed;
+    float: left;
+    width: 120px;
+    margin: 20px 80px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul{
+    background: #090909;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    margin:auto;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover{
+    color: #FB4704;
+}
+
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.btnNav{
+    float: right;
+    padding: 15px 30px;
+    background-color: #FB4704;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: -70px 80px 10px 0px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.btnNav:hover {
+    color: #FB4704;
+    background-color: #fff;
+}
+
+.inicio{
+    width: 100%;
+    height: 100vh;
+    background: url("./home.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.titlehome{
+    color: #fff;
+    font-size: 65px;
+    font-weight: 900;
+    padding-top: 3.5em;
+    padding-left: 1.2em;
+    padding-bottom: 0.2em;
+}
+
+.btnHome{
+    display: inline-block;
+    padding: 20px;
+    margin:auto;
+}
+
+.btnContact{
+    padding: 17px 30px;
+    background-color: #FB4704;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 10px 0px 0px 50px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%)
+}
+
+.btnContact:hover {
+    background-color: #101010;
+}
+
+.btnMore{
+    padding: 17px 30px;
+    background-color: #fff;
+    color: #090909;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 15px 0px 0px 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%)
+}
+
+.fa-solid{
+    margin-left: 5px;
+}
+
+.btnMore:hover {
+    color: #FB4704;
+}
+
+.sobremim{
+    width: 100%;
+    height: 90vh;
+    background: url("./sobremim.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.titleMe{
+    color: #FB4704;
+    font-size: 65px;
+    font-weight: 900;
+    padding-top: 2.5em;
+    padding-left: 9.1em;
+}
+
+.textAlign{
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    padding-left: 37em;
+    padding-right: 15em;
+}
+.textMe{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    
+    line-height: 30px;
+    text-align: justify
+}
+
+.btnCurriculo{
+    padding: 17px 35px;
+    background-color: #FB4704;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    
+    margin-left: 590px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 50%)
+}
+
+.btnCurriculo:hover {
+    background-color: #101010;
+}
+
+.habilidades{
+    height: 185px;
+    background-color: #000000;
+}
+
+.textHabilidades{
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+}
+
+.languages{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.languages img{
+    width: 400px;
+}
+
+.portfolio{
+    height: 300px;
+    background-color: #090909;
+}
+
+.projetos{
+    text-align: center;
+    color: #FB4704;
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+.projetosP{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.embreve{
+    text-align: center;
+    color: #fff;
+    font-size: 75px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.contato{
+    height: 300px;
+    background-color: #000;
+}
+
+.input{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.input-container{
+    width: 100%;
+    position: relative;
+}
+.label{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+    transition: all 0.2s;
+    padding: 0 2px;
+    z-index: 1;
+    color: #b3b3b3;
+}
+.text-input{
+    padding: 0.8rem;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(45, 45, 45);
+    background: #181818;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s;
+    color: #fff;
+}
+.label::before{
+    content: "";
+    height: 5px;
+    background: #181818;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 100%;
+    z-index: -1;
+}
+.text-input:focus{
+    border: 2px solid rgb(45, 45, 45);
+}
+.text-input:focus + .label,
+.filled{
+    top: -10px;
+    color: #fff;
+    font-size: 14px;
+}
+.text-input::placeholder{
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.text-input:focus::placeholder{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.powered{
+    color: #fff;
+    float: left;
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+.linkP { 
+    color: #ffff;
+    text-decoration: none;
+    transition: 0.5s;    
+}
+
+.linkP:hover {
+    color: #FB4704;
+}
+
+.social { 
+    margin-right: 65px;
+    margin-top: 5px;
+    list-style-type: none;
+    
+}
+
+.social li { 
+    padding-left: 20px; 
+    padding-top: 10px; 
+    float: right; 
+}
+
+.social li a { 
+    color:#CCC; 
+    background-color: #181818; 
+    padding: 12px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.social li a:hover { 
+    color: #FB4704; 
+    background-color: #fff; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social li i {  
+    width: 25px; 
+    height: 25px; 
+    text-align: center;
+}

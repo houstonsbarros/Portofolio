@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link rel="stylesheet" href="./src/styles.css">
+    <title>Houston Barros - Web Developer</title>
+	<link rel="icon" type="imagem/png" href="./src/favicon.png" />
+</head>
+
+<body>
+    <!-- /NAVEGAÇÃO/ -->
+		<header>
+			<nav>
+				<div class="logo"><img src="./src/logoo.png"></div>
+				<div class="mobile-menu">
+					<div class="linha1"></div>
+					<div class="linha2"></div>
+					<div class="linha3"></div>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#inicio">Início</a></li>
+						<li><a href="#sobremim">Sobre mim</a></li>
+						<li><a href="#habilidades">Habilidades</a></li>
+						<li><a href="#portfolio">Portfólio</a></li>
+					</ul>
+					<a class="btnNav" href="#contato">Entre em contato</a>
+				</div>
+				
+			</nav>
+		</header>
+    <!-- /INÍCIO/ -->
+	<section class="inicio" id="inicio">
+		<div class="titlehome">
+			<p>Hi,<br/>I'm Houston Barros<br/>and I'm Web Developer</p>
+		</div>
+		<div class="bginicio">
+		</div>
+        <div class="btnHome">
+		    <a href="#contato" class="btnContact">
+			     <span>Entre me contato</span>
+			</a>
+			<a href="#projetos" class="btnMore">
+				<span>Portfólio<i class="fa-solid fa-angle-down"></i></span>
+			</a>
+		</div>
+	</section>
+    <!-- /SOBRE MIM/ -->
+	<section class="sobremim" id="sobremim">
+        <div>
+            <h2 class="titleMe">Sobre mim</h2>
+        </div>
+
+        <div class="textAlign">
+			<h3 class="textMe">
+				Desde sempre me interessei pela área da tecnologia.
+				E atualmente faço faculdade de Análise e Desenvolvimento de Sistemas, onde crio
+				uma base sobre programação, comportamento e pensamento lógico,
+				linguagens programação diversas e dentre outras coisas do ramo.
+				O meu objetivo é me tornar um programador, estudo para isso e
+				futuramente quero assumir um cargo nessa área.
+			</h3>
+        </div>
+
+		<div>
+			<a class="btnCurriculo" href="./src/curriculo.pdf">Currículo<i class="fa-solid fa-file-arrow-down"></i></a>
+		</div>
+        <!-- /HABILIDADES/ -->
+	</section>
+	
+	<section class="habilidades" id="habilidades">
+            <div>
+			    <h3 class="textHabilidades">HABILIDADES</h3>
+            </div>
+
+            <div>
+				<div class="languages"><img src="./src/languages.png"></div>
+            </div>
+		</section>
+        <!-- /PROJETOS/ -->
+		<section class="portfolio" id="portfolio">
+            <div>
+			    <h2 class="projetos">PROJETOS DESENVOLVIDOS</h2>
+				<p class="projetosP">Aqui estão alguns de meus trabalhos</p>
+				<p class="embreve">Em Breve</p>
+			</div>
+		</section>
+		<footer>
+			<div>
+				<p class="powered">Desenvolvido por <a class="linkP" href="http://houstonbarros.great-site.net/"> Houston Barros </a></p>
+			</div>
+
+			<ul class="social">
+				<li><a href="https://www.linkedin.com/in/houston-barros/"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="https://github.com/houstonsbarros/"><i class="fab fa-github"></i></a></li>
+				<li><a href="https://www.instagram.com/houston_barros/"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://api.whatsapp.com/send?phone=5598970176656&text=Ol%C3%A1"><i class="fab fa-whatsapp"></i></a></li>
+			</ul>
+		</footer>
+
+		<script src="https://kit.fontawesome.com/92b9837e81.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script>
+			$(window).scroll(function(){
+				if($(window).scrollTop()){
+					$("nav").addClass("black");
+				}
+				else{
+					$("nav").removeClass("black");
+				}
+			})
+		</script>
+</body>
+</html>
